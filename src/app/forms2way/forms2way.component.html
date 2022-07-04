@@ -1,0 +1,20 @@
+
+<p style="font-size: 24px; font-weight:bold "> Traffic Two Way South</p>
+
+
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Sensor Status</label>
+    <div class="col-sm-10">
+      <input type="text"  class="form-control"  name="sensor status"  [(ngModel)]="sensor_status">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputSensorTraffic" class="col-sm-2 col-form-label" >Sensor Traffic</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="sensor traffic" ame="SensorTraffic" [(ngModel)]="sensor_traffic">
+    </div>
+  </div>
+
+  <button class="btn btn-primary" (click)="sendtofirebase()">Update</button>
+  
+  <button  class="btn btn-info"(click)="Twoway()">Back</button>
